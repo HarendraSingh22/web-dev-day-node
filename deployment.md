@@ -23,7 +23,8 @@ env: flex
 ```
 3. Now, in the `index.js` file, change the port to 8080 as the app engine runs the app on port 8080.
 4. The next step involves adding the node version to the `package.json` file,
-    Add the engine under the scripts key `"engines": { "node": ">=9.3.0" },`.
+    Add the engine under the scripts key `"engines": { "node": ">=9.3.0" },`
+    Also, add `"nodemon": "^1.18.10"` to the dependencies which we didn't save the last time.
 5. Next, we need to provide the starting point to the VM, add `"start": "nodemon index.js",` inside the `scripts`.
 
 
